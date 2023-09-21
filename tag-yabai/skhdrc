@@ -172,3 +172,6 @@ alt - x : yabai -m window --close && ~/.config/yabai/auto_close_space_when_space
 # 就用两个映射吧，alt - s进入或者退出stack，alt - d 切换到下一个stack
 alt - s : ${HOME}/.config/yabai/toggle-window-bsp-stack.sh
 alt - d : yabai -m window --focus stack.next || yabai -m window --focus stack.first
+
+# 让屏幕1也就是主屏幕在平铺bsp和浮动float之间来回切换
+alt - b : ~/.config/yabai/cycle_layout_bsp-float.sh
